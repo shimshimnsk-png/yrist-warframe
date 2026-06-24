@@ -62,7 +62,7 @@ export default function BenefitsWizardPage() {
   const SelectField = ({ label, id, value, onChange, options }: { label: string; id: string; value: string; onChange: (v: string) => void; options: string[] }) => (
     <div className="space-y-1.5">
       <Label htmlFor={id}>{label}</Label>
-      <Select value={value} onValueChange={onChange}>
+      <Select value={value} onValueChange={(v) => { if (v) onChange(v) }}>
         <SelectTrigger><SelectValue placeholder="Выберите" /></SelectTrigger>
         <SelectContent>{options.map(o => <SelectItem key={o} value={o}>{o}</SelectItem>)}</SelectContent>
       </Select>

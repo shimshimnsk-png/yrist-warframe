@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
-import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Send, Bot, User, Calendar, FileText } from 'lucide-react'
+import { Send, Bot, User } from 'lucide-react'
 import { toast } from 'sonner'
 
 interface Message {

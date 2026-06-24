@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
-import { Download, Send, UserPlus, ArrowLeft, FileText, CheckCircle2, Clock, AlertTriangle } from 'lucide-react'
+import { Download, Send, UserPlus, ArrowLeft, CheckCircle2, Clock, AlertTriangle } from 'lucide-react'
 import { toast } from 'sonner'
 import { documentCategories } from '@/data/demo'
 

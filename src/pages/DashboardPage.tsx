@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Inbox, Clock, FileCheck, UserCheck, CheckCircle, Timer, Eye } from 'lucide-react'
-import { demoApplications, statusLabels, statusColors, probabilityLabels, probabilityColors, type ServiceCategory } from '@/data/demo'
+import { demoApplications, statusLabels, statusColors, probabilityLabels, probabilityColors } from '@/data/demo'
 
 const stats = [
   { label: 'Новые заявки', value: '3', icon: Inbox, color: 'text-indigo bg-indigo-light' },
@@ -27,7 +27,7 @@ const categoryFilters: { value: string; label: string }[] = [
 
 export default function DashboardPage() {
   const navigate = useNavigate()
-  const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState<string | null>('all')
 
   const filtered = filter === 'all'
     ? demoApplications

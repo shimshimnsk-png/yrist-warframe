@@ -17,7 +17,7 @@ const filters = [
 ]
 
 export default function MyDocumentsPage() {
-  const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState<string | null>('all')
 
   const filtered = demoGeneratedDocuments.filter(doc => {
     if (filter === 'all') return true
